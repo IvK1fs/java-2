@@ -1,0 +1,20 @@
+package application;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+	Scanner sc = new Scanner(System.in);
+	
+System.out.println("Digite um número: ");
+
+int num = sc.nextInt();
+
+System.out.printf("O sucessor do %d é %d%nO antecessor de %d é %d", num, num + 1,num, num - 1);
+
+	sc.close();
+	}
+
+}

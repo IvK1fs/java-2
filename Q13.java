@@ -2,7 +2,7 @@ package application;
 
 import java.util.Scanner;
 
-public class main {
+public class Main {
 
 	public static void main(String[] args) {
 		
@@ -35,8 +35,10 @@ System.out.println("insira o codigo da peça 2: ");
 	System.out.println("insira a quantidade de peças: ");
 	
 	int quantPecas2 = sc.nextInt();
-	
-	System.out.printf("o valor total será %f", (double)(precoUm*quantPecas1 + precoDois*quantPecas2)*(IPI/100 + 1));
+	  int cods = codUm +0;
+	  int cods2 =codDois + 0;
+	  double calculo =(precoUm*quantPecas1 + precoDois*quantPecas2)*(IPI/100 + 1) ;
+	System.out.printf("o valor total será %.2f%nCodigos das mercadorias %d e %d", calculo, cods, cods2);
 	sc.close();
 	}
 
